@@ -1,0 +1,416 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  font-family: Garamond, sans-serif;
+  font-weight: 700;
+  font-size: 84px;
+}
+
+h2 {
+  font-family: Garamond, sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+h3 {
+  font-family: Garamond, sans-serif;
+  font-size: 27px;
+}
+
+.btn-text {
+  font-family: Garamond, sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  padding: 20px 0;
+}
+
+.header {
+  background-color: #f6efed;
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      width: 125px;
+      margin: 0 100px 0 0;
+
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          margin-right: 40px;
+          transition: all linear 0.5s;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+          }
+
+          a {
+            font-family: Cormorant Garamond, sans-serif;
+            font-size: 18px;
+            color: rgb(99, 86, 86);
+            text-decoration: none;
+            box-sizing: border-box;
+            border-bottom: 1px solid transparent;
+            transition: all linear 0.5s;
+
+            &:hover {
+              border-bottom: 1px solid rgb(99, 86, 86);
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .firm-name {
+    position: relative;
+
+    .background {
+      background: url("../images/background.jpg");
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+      z-index: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .container {
+      padding: 100px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+
+      .firm-name-h1 {
+        text-align: center;
+
+        h1 {
+          color: rgb(99, 86, 86);
+        }
+      }
+    }
+  }
+
+  .about-me {
+    background-color: #f6efed;
+
+    .container {
+      padding: 100px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        color: rgb(99, 86, 86);
+        margin-bottom: 60px;
+      }
+
+      .about-me-body {
+        display: flex;
+        align-items: center;
+
+        .foto {
+          padding: 50px;
+          max-width: 400px;
+          position: relative;
+
+          .border-foto {
+            border: 2px solid rgb(99, 86, 86);
+            position: absolute;
+            top: 35px;
+            left: 65px;
+            width: 300px;
+            height: 450px;
+            z-index: 1;
+          }
+
+          img {
+            position: relative;
+            width: 100%;
+            z-index: 2;
+          }
+        }
+
+        .about-me-text {
+          max-width: 600px;
+
+          h3 {
+            text-align: center;
+            color: rgb(99, 86, 86);
+          }
+        }
+      }
+    }
+  }
+
+  .catalog {
+    background: rgb(99, 86, 86);
+
+    .container {
+      padding: 100px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .catalog-name {
+        max-width: 650px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 60px;
+      }
+
+      .catalog-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        .button {
+          border: 1px solid rgb(255, 255, 255);
+          background: transparent;
+          color: rgb(255, 255, 255);
+          border-radius: 30px;
+          padding: 10px 20px;
+          margin-right: 30px;
+          transition: all linear 0.5s;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+          }
+
+        }
+      }
+
+      .row {
+
+        .col {
+
+          .card {
+            background: #f6efed;
+            border-radius: 15px;
+
+            &:hover {
+              .card-image {
+                img {
+                  transform: scale(1.05);
+                }
+              }
+            }
+
+            .card-image {
+              position: relative;
+              width: 100%;
+              height: 175px;
+              background: white;
+              border-radius: 15px 15px 0 0;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+
+
+              img {
+                height: 80%;
+                transition: all linear 0.5s;
+                margin-bottom: 10px;
+              }
+            }
+
+            .card-body {
+              .card-name {
+                font-family: Cormorant Garamond, sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                color: #343030;
+                height: 40px;
+
+              }
+
+              .card-text {
+                font-family: Cormorant Garamond, sans-serif;
+                font-size: 14px;
+                color: rgba(52, 48, 48, 0.5);
+              }
+
+              .text-muted {
+                font-family: Cormorant Garamond, sans-serif;
+                font-size: 16px;
+                color: rgba(52, 48, 48, 0.7);
+              }
+
+              .btn-card {
+                background: transparent;
+                border: 1px solid rgba(52, 48, 48, 0.7);
+                padding: 5px;
+                border-radius: 10px;
+                font-size: 14px;
+                color: rgba(52, 48, 48, 0.7);
+                transition: all linear 0.5s;
+
+                &:hover {
+                  border: 1px solid rgba(52, 48, 48, 0.8);
+                  color: rgba(52, 48, 48, 0.8);
+                  box-shadow: 0 0 5px rgb(0, 0, 0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sale {
+    background-color: #f6efed;
+
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 100px 0;
+
+      .sale-photo {
+        margin-left: 15px;
+        margin-right: 100px;
+
+        img {
+          width: 400px;
+        }
+      }
+
+      .sale-text {
+        text-align: center;
+
+        h2 {
+          color: rgb(99, 86, 86);
+          margin-bottom: 60px;
+        }
+
+        .text-sale-sec {
+          color: rgba(99, 86, 86, 0.7);
+          font-family: Garamond, sans-serif;
+          font-size: 27px;
+        }
+      }
+
+
+    }
+  }
+
+  .reviews {
+    background: rgb(99, 86, 86);
+    padding: 100px 0;
+
+    .reviews-header {
+      margin-bottom: 60px;
+    }
+
+    .carousel {
+
+      .carousel-inner {
+
+        .carousel-item {
+          height: 450px;
+
+          .container {
+
+            .carousel-caption {
+              width: 750px;
+              height: 400px;
+              background: white;
+              border-radius: 40px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 350px;
+                padding: 20px;
+
+                img {
+                  height: 100%;
+                }
+              }
+
+              .slider-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                color: rgb(99, 86, 86);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.popups {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.56);
+  z-index: 100;
+
+  .popup-rafaello {
+    display: none;
+    max-width: 900px;
+    border-radius: 30px;
+    background: rgb(164, 155, 155);
+    position: relative;
+    margin: auto;
+  }
+}
