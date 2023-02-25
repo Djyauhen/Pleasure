@@ -175,6 +175,11 @@ main {
           h3 {
             text-align: center;
             color: rgb(99, 86, 86);
+
+            a {
+              text-decoration: none;
+              //color: rgb(99, 86, 86);
+            }
           }
         }
       }
@@ -191,6 +196,13 @@ main {
       align-items: center;
       justify-content: center;
       position: relative;
+
+      .row {
+        .col {
+          .card {
+          }
+        }
+      }
 
       .catalog-name {
         max-width: 650px;
@@ -231,13 +243,10 @@ main {
           .card {
             background: #f6efed;
             border-radius: 15px;
+            transition: all linear .3s;
 
             &:hover {
-              .card-image {
-                img {
-                  transform: scale(1.05);
-                }
-              }
+              transform: scale(1.05);
             }
 
             .card-image {
@@ -265,6 +274,7 @@ main {
                 font-size: 18px;
                 color: #343030;
                 height: 40px;
+                text-align: center;
 
               }
 
@@ -272,6 +282,7 @@ main {
                 font-family: Cormorant Garamond, sans-serif;
                 font-size: 14px;
                 color: rgba(52, 48, 48, 0.5);
+                text-align: center;
               }
 
               .text-muted {
@@ -405,12 +416,35 @@ main {
   background: rgba(0, 0, 0, 0.56);
   z-index: 100;
 
-  .popup-rafaello {
+  .popup {
     display: none;
     max-width: 900px;
     border-radius: 30px;
     background: rgb(164, 155, 155);
     position: relative;
     margin: auto;
+    padding: 50px;
+
+    .popup-img {
+      max-height: 450px;
+
+      img {
+        max-height: 350px;
+      }
+    }
+
+    .close {
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      right: 30px;
+      top: 30px;
+      cursor: pointer;
+      transition: 0.3s all linear;
+
+      &:hover {
+        transform: skewY(180deg);
+      }
+    }
   }
 }
